@@ -28,6 +28,7 @@ Handy python scripts to load data (load_data.py) and functions for handling embe
 ## Folder Structure
 ```
 tcga-embedding
+|   LICENSE
 |   README.rst
 |   load_data.py
 |   util.py
