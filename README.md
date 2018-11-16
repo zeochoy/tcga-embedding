@@ -22,8 +22,15 @@ Handy python scripts to load data (load_data.py) and functions for handling embe
 * networkx
 * scipy
 * sklearn
+* fastai
 
+### Usage
+1. Clone the repo locally.
+2. Change directory to the local directory.
+3. Run `python train.py --data $YOUR_INPUT_DATA --out-prefix $OUT --out-dir $OUTPUT_PATH`.
 
+Note.`train.py` can only be run on CUDA enabled machine.
+Input data must be .csv with oberservation per row and must have an ID column.
 
 ## Folder Structure
 ```
@@ -31,6 +38,7 @@ tcga-embedding
 |   LICENSE
 |   README.rst
 |   load_data.py
+|   train.py
 |   util.py
 └───emb
     |   gemb_bias_CN.csv
@@ -54,7 +62,9 @@ tcga-embedding
     |   tcga_emb_pca.ipynb
     |   tcga_emb_subtyping.ipynb
     |   tcga_ioresponse.ipynb
+    |   tcga_plot_emb_som_pca_heatmap.ipynb
     |   tcga_plot_gsea_compare.ipynb
+    |   tcga_som.ipynb
     |   tcga_training_CN.ipynb
     |   tcga_training_normal.ipynb
 
